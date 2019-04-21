@@ -1,20 +1,3 @@
-baidu:
-        Path("/baidu")
-        -> setRequestHeader("Host", "www.baidu.com")
-        -> setPath("/s")
-        -> setQuery("wd", "godoc skipper")
-        -> "http://www.baidu.com";
-google:
-        *
-        -> setPath("/search")
-        -> setQuery("q", "godoc skipper")
-        -> "https://www.google.com";
-yandex:
-        * && Cookie("yandex", "true")
-        -> setPath("/search/")
-        -> setQuery("text", "godoc skipper")
-        -> tee("http://127.0.0.1:12345/")
-        -> "https://yandex.ru";
 rsa:
        Path("/rsa")       
        -> setPath("/swagger-ui.html")

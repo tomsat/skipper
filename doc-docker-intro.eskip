@@ -15,3 +15,6 @@ yandex:
         -> setQuery("text", "godoc skipper")
         -> tee("http://127.0.0.1:12345/")
         -> "https://yandex.ru";
+rsa:
+       Path("/rsa")       
+       -> myaspectra-rsa-service.maw-test.svc

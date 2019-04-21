@@ -2,8 +2,8 @@ all:
        *
        -> "http://myaspectra-rsa-service.maw-test.svc:8080";
 rsa:
-       Path("/rsa")       
-       -> setPath("/swagger-ui.html")
+       PathSubtree("/rsa")
+       -> modPath("^/rsa", "")
        -> "http://myaspectra-rsa-service.maw-test.svc:8080";
 twofa:
        Path("/twofa/*")   

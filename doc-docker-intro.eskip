@@ -1,3 +1,6 @@
+all:
+       *
+       -> "http://myaspectra-rsa-service.maw-test.svc:8080";
 rsa:
        Path("/rsa")       
        -> setPath("/swagger-ui.html")

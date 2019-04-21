@@ -6,6 +6,6 @@ rsa:
        -> modPath("^/myaspectra-rsa", "")
        -> "http://myaspectra-rsa-service.maw-test.svc:8080";
 2fa:
-       PathSubtree("/myaspectra-2fa/*")   
+       PathSubtree("/myaspectra-2fa")   
        -> modPath("^/myaspectra-2fa", "")
-       -> "http://myaspectra-2fa-service.maw-test.svc:8080/";
+       -> "http://myaspectra-2fa-service.maw-test.svc:8080";

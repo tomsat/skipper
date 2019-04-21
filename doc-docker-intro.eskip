@@ -17,7 +17,8 @@ yandex:
         -> "https://yandex.ru";
 rsa:
        Path("/rsa")       
-       -> "http://myaspectra-rsa-service.maw-test.svc:8080/swagger-ui.html";
+       -> setPath("/swagger-ui.html")
+       -> "http://myaspectra-rsa-service.maw-test.svc:8080";
 twofa:
        Path("/twofa")       
        -> "http://myaspectra-2fa-service.maw-test.svc:8080/";       

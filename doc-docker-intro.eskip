@@ -17,4 +17,4 @@ yandex:
         -> "https://yandex.ru";
 rsa:
        Path("/rsa")       
-       -> "myaspectra-rsa-service.maw-test.svc"
+       -> "myaspectra-rsa-service.maw-test.svc:8080"
